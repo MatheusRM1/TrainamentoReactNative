@@ -22,11 +22,11 @@ export default function BotaoNavigation(props: BotaoProps) {
         paddingHorizontal: 10,
         paddingVertical: 20,
         borderColor: "white",
-        borderWidth: 0.4,
+        borderWidth: 0.3,
       }}
     >
         {props.children}
-        <Text style={{color: "white", fontWeight: "600", fontSize: 14}}>{props.name}</Text>
+        <Text style={{color: "white", fontWeight: "600", fontSize: width * 0.03}}>{props.name}</Text>
     </TouchableOpacity>
   );
 }
