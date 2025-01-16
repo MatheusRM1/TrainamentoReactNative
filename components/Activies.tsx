@@ -8,9 +8,9 @@ interface ActiviesProps {
   valor: string;
 }
 
-export default function Activies(props: ActiviesProps) {
+export default function Activities(props: ActiviesProps) {
   return (
-    <View style={style.activie}>
+    <View style={[style.activie, style.centro, {justifyContent: "space-between"}]}>
       <View>
         <Text
           style={{
@@ -37,7 +37,7 @@ export default function Activies(props: ActiviesProps) {
         <Text
           style={{
             color: "#50cf01",
-            fontWeight: "500",
+            fontFamily: "PoppinsMedium",
             fontSize: width * 0.03,
           }}
         >
@@ -63,8 +63,8 @@ const style = StyleSheet.create({
     justifyContent: "space-between",
     opacity: 0.8,
     borderWidth: 0.4,
-    borderColor: "white",
     marginBottom: 10,
+    borderColor: "white",
     height: height * 0.08,
   },
   valor: {
