@@ -18,12 +18,11 @@ export default function BotaoNavigation(props: BotaoProps) {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      borderRadius: 10,
+      borderRadius: 20,
       paddingHorizontal: 5,
       paddingVertical: 20,
       borderColor: "white",
       borderWidth: 0.3,
-
     },
   ]}
 >

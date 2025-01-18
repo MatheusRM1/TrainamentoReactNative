@@ -57,7 +57,7 @@ const style = StyleSheet.create({
   activie: {
     backgroundColor: "#787997",
     flexDirection: "row",
-    borderRadius: 15,
+    borderRadius: 40,
     padding: 10,
     marginTop: 10,
     justifyContent: "space-between",
