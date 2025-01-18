@@ -2,13 +2,13 @@ import { height, width } from "@/constants/Dimensions";
 import { StyleSheet, Text, View } from "react-native";
 import { Plus } from "react-native-feather";
 
-interface ActiviesProps {
+interface ActivitiesProps {
   data: string;
   name: string;
   valor: string;
 }
 
-export default function Activities(props: ActiviesProps) {
+export default function Activities(props: ActivitiesProps) {
   return (
     <View style={[style.activie, style.centro, {justifyContent: "space-between"}]}>
       <View>

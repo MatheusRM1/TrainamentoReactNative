@@ -41,7 +41,7 @@ export default function Card(props : CardProps) {
         ${props.valor}
       </Text>
       <TouchableOpacity
-        style={{ display: "flex", alignItems: "flex-end", width: "70%", marginLeft: 50 }}
+        style={{ display: "flex", alignItems: "flex-end", width: "90%",}}
       >
         <Plus
           width={size}

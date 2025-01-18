@@ -1,4 +1,4 @@
-import Activies from "@/components/Activies";
+import Activies from "@/components/Activities";
 import BotaoNavigation from "@/components/Botao";
 import Card from "@/components/Card";
 import { height, width } from "@/constants/Dimensions";
