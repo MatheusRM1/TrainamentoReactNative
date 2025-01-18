@@ -9,13 +9,14 @@ interface CardProps{
 }
 
 export default function Card(props : CardProps) {
-  const size = width * 0.08;
+  const size = width * 0.09;
   return (
-    <View style={style.card}>
+    <View style={styles.card}>
+      <View style={styles.activitiesContainer}>
       <View
         style={{
-          flexDirection: "row",
           display: "flex",
+          flexDirection: "row",
           alignItems: "center",
           gap: 4,
         }}
@@ -40,21 +41,22 @@ export default function Card(props : CardProps) {
       >
         ${props.valor}
       </Text>
+      </View>
       <TouchableOpacity
-        style={{ display: "flex", alignItems: "flex-end", width: "90%",}}
+        style={{ display: "flex", flex: 1, alignItems: "flex-end", width: "90%"}}
       >
         <Plus
           width={size}
           height={size}
           color={"#967cd7"}
-          style={{ backgroundColor: "white", borderRadius: 100 }}
+          style={{ backgroundColor: "white", borderRadius: 100, top: '100%', transform: [{translateY: "-50%"}] }}
         />
       </TouchableOpacity>
     </View>
   );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   card: {
     backgroundColor: "#7a62dd",
     width: "100%",
@@ -63,6 +65,11 @@ const style = StyleSheet.create({
     justifyContent: "center",
     display: "flex",
     paddingLeft: 20,
-    gap: 4,
+    //gap: 4,
   },
+  activitiesContainer: {
+    flex: 1,
+    position: 'absolute',
+    left: '4%'
+  }
 });
